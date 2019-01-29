@@ -1,16 +1,31 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import LandingPage from "./Pages/LandingPage/LandingPage";
+import AboutPage from "./Pages/AboutPage/AboutPage";
+import ProjectsPage from "./Pages/ProjectsPage/ProjectsPage";
+import HobbiesPage from "./Pages/HobbiesPage/HobbiesPage";
+import Navbar from "./Components/Navbar";
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
+        <Navbar />
+        <LandingPage id="landing-page"/>
+        <AboutPage id="about-page"/>
+        <ProjectsPage id="projects-page"/>
+        <HobbiesPage id="hobbies-page"/>
+        {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            Hey, it's Charles Qian. Welcome to my website!
           </p>
+          <div className="social-icons">
+            <a target="_blank" href="https://github.com/charlescqian" className="icon fav-github">GitHub Icon</a>
+            <a target="_blank" href="https://www.linkedin.com/in/charlesqianubc/" className="icon fav-linkedin">LinkedIn Icon</a>
+          </div>
           <a
             className="App-link"
             href="https://reactjs.org"
@@ -19,7 +34,7 @@ class App extends Component {
           >
             Learn React
           </a>
-        </header>
+        </header> */}
       </div>
     );
   }
