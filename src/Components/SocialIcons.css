@@ -1,0 +1,10 @@
+
+.fav-icon {
+    color: #ffffff;
+    margin: 1rem;
+}
+
+.fav-icon:hover {
+    transition: transform .2s;
+    transform: scale(1.2);
+}
