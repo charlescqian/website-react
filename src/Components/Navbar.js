@@ -3,6 +3,8 @@ import logo from "../logo.svg";
 import * as Scroll from 'react-scroll';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
+import './Navbar.css';
+
 class Navbar extends Component {
     scrollToTop = () => {
         scroll.scrollToTop();
@@ -25,7 +27,7 @@ class Navbar extends Component {
                                 to="about-page"
                                 spy={true}
                                 smooth={true}
-                                offset={50}
+                                offset={-40}
                                 duration={500}
                             >
                                 About
@@ -37,7 +39,7 @@ class Navbar extends Component {
                                 to="projects-page"
                                 spy={true}
                                 smooth={true}
-                                offset={50}
+                                offset={-40}
                                 duration={500}
                             >
                                 Projects
@@ -49,7 +51,7 @@ class Navbar extends Component {
                                 to="hobbies-page"
                                 spy={true}
                                 smooth={true}
-                                offset={50}
+                                offset={-40}
                                 duration={500}
                             >
                                 Hobbies

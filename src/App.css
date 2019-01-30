@@ -1,31 +1,11 @@
-
-.navbar-content {
-  padding: 0rem 2rem;
-  display: flex;
-  align-items: center;
-}
-
-.navbar-logo {
-  align-content: flex-start;
-  height: 60px;
-  width: 60px;
-}
-
-.navbar-logo:hover {
-  cursor: pointer;
-}
-
-.navbar-item {
-  display: inline;
-  margin-right: 2rem;
-}
-
-.navbar-item:hover {
-  cursor: pointer;
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: local('Source Sans Pro Regular'), url('./libs/SourceSansPro-Regular.ttf');
 }
 
 .App {
   text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .App-logo {
@@ -33,7 +13,7 @@
   height: 40vmin;
 }
 
-.App-header {
+.landing-page, .about-page, .projects-page, .hobbies-page {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
